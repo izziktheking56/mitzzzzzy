@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Document</title>
+</head>
+<body style="margin: 0; position: relative">
+   <img src="mitzi.gif" width="200px" height="200px" style="position: absolute; left: 0">
+   <img src="banana.gif" width="200px" height="200px" style="position: absolute; left: 50%; transform: translateX(-50%); top: 100px">
+   <img src="cat.gif" width="200px" height="200px" style="position: absolute; right: 0">
+   <h1 style="text-align:center;font-size:100px;margin-top:20%">Break top!</h1>
+   <script>
+   var m = new Audio("https://www.youtube.com/watch?v=po-0n1BKW2w&t=10s&ab_channel=gamemusicisgood3")
+   document.body.addEventListener('mouseover',function(){m.play()})
+   a()
+   function a(){setTimeout(function(){document.body.style.background = `#${Math.floor(Math.random()*16777215).toString(16)}`;a()},75)}
+   </script>
+</body>
+</html>
